@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+
+<body>
+{% for fileData in fileInfoList %}
+    {{ fileData[0] }} | {{ fileData[1] }} | {{ fileData[2] }} | {{ fileData[3] }} <br />
+{% end for %}
+</body>
+</html>
