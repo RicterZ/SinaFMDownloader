@@ -27,7 +27,7 @@ class BaseHandler(tornado.web.RequestHandler):
 
     def getFile(self):
         list = os.listdir(self.downloadPath)
-        return [line for line in list][:28] #取前28个
+        return [line for line in list][:-28] #取前28，倒序
 
 class MainHandler(BaseHandler):
     def get(self):
